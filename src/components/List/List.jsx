@@ -1,13 +1,15 @@
 import React from "react";
 
-const List = () => {
-	
+import Header from "./components/Header";
+import Places from "./components/Places";
 
-	return (
+const List = ({ places }) => {
+  return (
 		<>
-			<h1>List</h1>
+			<Header />
+			<Places places={ places }/>
 		</>
-	);
+  );
 };
 
 export default List;
