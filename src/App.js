@@ -12,7 +12,7 @@ import { getPlacesData } from "./api/index";
 const App = () => {
   const [places, setPlaces] = useState([]);
   const [coordinates, setCoordinates] = useState({});
-  const [bounds, setBounds] = useState(null);
+  const [bounds, setBounds] = useState({});
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -23,7 +23,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log(places);
     getPlacesData(bounds.sw, bounds.ne).then((data) => {
       setPlaces(data);
     });
@@ -34,7 +33,7 @@ const App = () => {
       <CssBaseline />
       <Header />
       <Grid container spacing={3} style={{ width: "100%" }}>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} style={{ padding: "2rem" }}>
           <List places={places} />
         </Grid>
         <Grid item xs={12} md={8}>
@@ -42,6 +41,7 @@ const App = () => {
             setCoordinates={setCoordinates}
             setBounds={setBounds}
             coordinates={coordinates}
+            places={places}
           />
         </Grid>
       </Grid>

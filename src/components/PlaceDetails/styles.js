@@ -5,9 +5,13 @@ export default makeStyles(() => ({
     margin: '5px 5px 5px 0',
   },
   subtitle: {
-    display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '10px',
+    display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '10px'
   },
   spacing: {
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
   },
+  address: {
+    maxWidth: '70%',
+    textAlign: 'right'
+  }
 }));
