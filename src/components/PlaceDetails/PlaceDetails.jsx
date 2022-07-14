@@ -12,7 +12,6 @@ import {
 } from "@material-ui/core";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import PhoneIcon from "@material-ui/icons/Phone";
-import Rating from "@material-ui/lab/Rating";
 
 import useStyles from "./styles";
 
@@ -58,7 +57,7 @@ const PlaceDetails = ({ place }) => {
           <Typography
             gutterBottom
             variant="subtitle2"
-            color="text-secondary"
+            color="textSecondary"
             className={classes.subtitle}
           >
             <LocationOnIcon /> <span className={classes.address}>{place.address}</span>
@@ -69,7 +68,7 @@ const PlaceDetails = ({ place }) => {
           <Typography
             gutterBottom
             variant="subtitle2"
-            color="text-secondary"
+            color="textSecondary"
             className={classes.subtitle}
           >
             <PhoneIcon /> {place.phone}

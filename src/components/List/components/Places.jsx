@@ -1,11 +1,6 @@
 import React from "react";
 import {
-  Grid,
-  Typography,
-  InputLabel,
-  MenuItem,
-  FormControl,
-  Select,
+  Grid
 } from "@material-ui/core";
 
 import useStyles from "../styles";
