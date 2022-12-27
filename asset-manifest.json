@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/traveler/static/js/main.8792e829.js",
+    "index.html": "/traveler/index.html",
+    "main.8792e829.js.map": "/traveler/static/js/main.8792e829.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8792e829.js"
+  ]
+}
